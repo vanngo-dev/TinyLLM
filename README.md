@@ -6,6 +6,8 @@ This project builds a small GPT-style language model from raw text to inference 
 
 Phase 00 creates the project shell and mental map. It does not implement a tokenizer, model, training loop, generation, checkpointing, runtime, KV cache, MoE, or distributed simulation yet.
 
+Phase 01 adds a simple character tokenizer so raw text can be encoded into token IDs and decoded back into text.
+
 ## Current Shape
 
 - `tinyllm/` contains the Python package.
@@ -22,5 +24,12 @@ Phase 00 creates the project shell and mental map. It does not implement a token
 ```powershell
 python -m pip install -r requirements.txt
 pytest
+```
+
+## Command Reference
+
+```powershell
+python -m tinyllm.tokenizer_char --text "hello tiny llm"
+pytest tests/test_tokenizer_char.py
 ```
 

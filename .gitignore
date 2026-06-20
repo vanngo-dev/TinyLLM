@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.test-artifacts/
 .mypy_cache/
 .ruff_cache/
 .venv/
@@ -27,4 +28,4 @@ data/processed/*
 !data/processed/.gitkeep
 data/tokenizers/*
 !data/tokenizers/.gitkeep
-
+!data/tokenizers/char_vocab.json

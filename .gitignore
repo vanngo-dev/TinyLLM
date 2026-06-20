@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local environment
+.env
+.env.*
+
+# Project outputs
+checkpoints/*
+!checkpoints/.gitkeep
+exports/*
+!exports/.gitkeep
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/tokenizers/*
+!data/tokenizers/.gitkeep
+
